@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    implementation project(':swappify-api-model')
+
+    // connector
+    implementation 'org.springframework.cloud:spring-cloud-openfeign-core'
+    implementation 'io.github.openfeign.form:feign-form'
+    implementation 'io.github.openfeign:feign-core'
+    implementation 'io.github.openfeign.form:feign-form-spring'
+    implementation 'com.google.code.gson:gson'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+}
+
+jar {
+    enabled = true
+}
